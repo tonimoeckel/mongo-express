@@ -82,7 +82,7 @@ module.exports = {
   },
 
   site: {
-    // baseUrl: the URL that mongo express will be located at - Remember to add the forward slash at the stard and end!
+    // baseUrl: the URL that mongo express will be located at - Remember to add the forward slash at the start and end!
     baseUrl: process.env.ME_CONFIG_SITE_BASEURL || '/',
     cookieKeyName: 'mongo-express',
     cookieSecret:     process.env.ME_CONFIG_SITE_COOKIESECRET   || 'cookiesecret',
@@ -141,6 +141,9 @@ module.exports = {
     //collapsibleJSONDefaultUnfold: if collapsibleJSON is set to `true`, this defines default level
     //  to which JSONs are displayed unfolded; use number or "all" to unfold all levels
     collapsibleJSONDefaultUnfold: 1,
+
+	//gridFSEnabled: if gridFSEnabled is set to 'true', you will be able to manage uploaded files ( ak. grids, gridFS )
+	gridFSEnabled: false
   },
 
   // Specify the default keyname that should be picked from a document to display in collections list.
